@@ -17,7 +17,6 @@ async function getToken(){
     }
     const res = await axios.post('http://20.244.56.144/train/auth',data)
         var access_token=res.data.access_token
-        console.log(access_token)
         return access_token
 }
 

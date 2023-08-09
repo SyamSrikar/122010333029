@@ -22,9 +22,6 @@ const Alltrains=()=> {
 
   return (
     <div className='flex flex-col'>
-      <div className='flex w-[100%] justify-end'>
-        <div className='cursor-pointer text-normal flex font-medium py-[20px] px-[40px]'>Search Single Train</div>
-    </div>
       <div className='flex justify-center text-xl'>
       ALL Trains
       </div>

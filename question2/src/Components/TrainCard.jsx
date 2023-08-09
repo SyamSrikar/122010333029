@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const TrainCard=({train})=> {
     const departureTimeInSeconds = train.departureTime.Hours * 3600 +
@@ -18,7 +19,9 @@ const TrainCard=({train})=> {
       <p className="text-gray-600">Seats Available: Sleeper - {train.seatsAvailable.sleeper}, AC - {train.seatsAvailable.AC}</p>
       <p className="text-gray-600">Price: Sleeper - {train.price.sleeper}, AC - {train.price.AC}</p>
       <p className="text-gray-600">Delayed By: {train.delayedBy} minutes</p>
-      
+      <Link to={`/train/${train.trainNumber}`} className="text-blue-500 hover:underline">
+              View Details
+            </Link>
     </div>
   );
 

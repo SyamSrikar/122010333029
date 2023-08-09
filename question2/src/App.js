@@ -8,7 +8,7 @@ function App() {
   return (
       <Routes>
         <Route exact path='/' element={<Alltrains/>} />
-        <Route exact path='/singleTrain' element={<SingleTrain/>}/>
+        <Route path="/train/:trainNumber" element={<SingleTrain />} />
       </Routes>
   );
 }
